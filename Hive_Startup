@@ -1,2 +1,17 @@
 # To use the hive, First we need start the hadoop cluseter by using the below commands.
-START-DFS.SH
+hduser@ubuntu:~/Desktop$ jps
+2667 Jps
+hduser@ubuntu:~/Desktop$ start-dfs.sh
+Starting namenodes on [localhost]
+Starting datanodes
+Starting secondary namenodes [ubuntu]
+hduser@ubuntu:~/Desktop$ start-yarn.sh
+Starting resourcemanager
+Starting nodemanagers
+hduser@ubuntu:~/Desktop$ jps
+2868 NameNode
+2996 DataNode
+3172 SecondaryNameNode
+3428 ResourceManager
+3559 NodeManager
+3919 Jps
