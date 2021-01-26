@@ -48,3 +48,18 @@ ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ',';
 
 *********************************************
+To check the file available in the HDFS by using the below commands.
+hadoop fs -ls /user/hive/warehouse/department
+
+hduser@ubuntu:~/Desktop$ hdfs dfs -ls /user/hive/warehouse
+Found 2 items
+drwxr-xr-x   - hduser supergroup          0 2021-01-22 10:08 /user/hive/warehouse/department
+drwxr-xr-x   - hduser supergroup          0 2021-01-26 11:32 /user/hive/warehouse/employee
+
+hduser@ubuntu:~/Desktop$ hdfs dfs -ls /user/hive/warehouse/department
+Found 3 items
+-rw-r--r--   1 hduser supergroup         10 2021-01-22 10:06 /user/hive/warehouse/department/000000_0
+-rw-r--r--   1 hduser supergroup        240 2021-01-22 09:41 /user/hive/warehouse/department/Department.txt
+-rw-r--r--   1 hduser supergroup         50 2021-01-22 09:40 /user/hive/warehouse/department/Department_West.t
+
+
