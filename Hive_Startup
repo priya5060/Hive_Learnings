@@ -1,0 +1,2 @@
+# To use the hive, First we need start the hadoop cluseter by using the below commands.
+START-DFS.SH
